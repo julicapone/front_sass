@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $background-primary;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 7fr 2em;
+    gap: $principal-gap;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+    

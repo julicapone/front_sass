@@ -1,0 +1,73 @@
+main {
+    grid-area: main;
+    justify-self: center;
+    display: grid;
+    gap: $principal-gap;
+    width: 90%;
+}
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: $border;
+    border-radius: 5px;
+    padding: 0.7em;
+}
+    
+.stories-container img {
+    width: $profile-image;
+    border-radius: 50%;
+}
+
+.card {
+    border: $border;
+    border-radius: 5px;
+}
+
+.card-body p:nth-child(2) {
+    color: $font-secondary;
+}
+
+.card-body p span {
+    font-weight: 500;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+    border-bottom: $border;
+}
+
+.card-header img {
+    width: $profile-image;
+    border-radius: 50%;
+}
+
+.card-header h2 {
+    font-size: 1em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.card-body img {
+    align-self: center;
+    width: $profile-image-square;
+}
+
+.card-body i {
+    font-size: 1.5em;
+    margin-right: 0.7em;
+}
+
+.card-body p {
+    color: pink;
+    padding: 0.2em;
+}

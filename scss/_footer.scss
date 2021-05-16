@@ -1,0 +1,10 @@
+footer {
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    background-color: $background-footer;
+    color: $font-footer;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 0.6em;
+}

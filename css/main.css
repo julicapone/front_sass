@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FAFAFA;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 7fr 2em;
+  gap: 1.5em;
+  grid-template-areas: "header" "main" "footer";
+}
+
+main {
+  grid-area: main;
+  justify-self: center;
+  display: grid;
+  gap: 1.5em;
+  width: 90%;
+}
+
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0.7em;
+}
+
+.stories-container img {
+  width: 3em;
+  border-radius: 50%;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-body p:nth-child(2) {
+  color: #808080;
+}
+
+.card-body p span {
+  font-weight: 500;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card-header img {
+  width: 3em;
+  border-radius: 50%;
+}
+
+.card-header h2 {
+  font-size: 1em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.card-body img {
+  align-self: center;
+  width: 30em;
+}
+
+.card-body i {
+  font-size: 1.5em;
+  margin-right: 0.7em;
+}
+
+.card-body p {
+  color: pink;
+  padding: 0.2em;
+}
+
+header {
+  grid-area: header;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+header input {
+  display: none;
+}
+
+header img {
+  width: 3em;
+  border-radius: 50%;
+  justify-self: end;
+}
+
+@media (min-width: 768px) {
+  header img {
+    width: 3em;
+    border-radius: 50%;
+  }
+}
+footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  background-color: #222222;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6em;
+}
+
+/*# sourceMappingURL=main.css.map */
