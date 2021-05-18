@@ -24,9 +24,20 @@ header img {
 }
         
 @media (min-width: $tablet) {
-    header img {
-        width: $profile-image;
-        border-radius: 50%;
+    header input {
+        display: inline-block;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    header input {
+        border: $border;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.5em;
     }
 }
     

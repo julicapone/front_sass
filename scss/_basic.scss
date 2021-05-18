@@ -14,12 +14,16 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 7fr 2em;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0.5fr 8fr 1.5em;
     gap: $principal-gap;
     grid-template-areas:
       "header"
       "main"
       "footer";
   }
+
+  @media (min-width: $tablet) {
+    
+}
     
